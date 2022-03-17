@@ -1,57 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <TextView
-        android:text="Anak1"
-        android:textSize="30sp"
-        android:background="#BCBBBB"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="Anak2"
-        android:textSize="30sp"
-        android:background="#E10F0F"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="Anak3"
-        android:textSize="30sp"
-        android:background="#3F51B5"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"/>
-
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="horizontal"
+    <View
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
-    <TextView
-        android:text="Anak4"
-        android:textSize="30sp"
-        android:background="#3DAE3D"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="Anak5"
-        android:textSize="30sp"
-        android:background="#FFC107"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:text="Anak6"
-        android:textSize="30sp"
-        android:background="#B54D3F"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="250dp"
+        android:background="@drawable/bg" />
 
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/bgi">
+
+                <ImageView
+                    android:id="@+id/k1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/school" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_alignLeft="@+id/k1"
+                    android:layout_alignTop="@+id/k1"
+                    android:layout_alignRight="@+id/k1"
+                    android:layout_alignBottom="@+id/k1"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center"
+                    android:text="Sekolahan"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/bgi">
+
+                <ImageView
+                    android:id="@+id/k2"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/blackboard" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_alignLeft="@+id/k2"
+                    android:layout_alignTop="@+id/k2"
+                    android:layout_alignRight="@+id/k2"
+                    android:layout_alignBottom="@+id/k2"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center"
+                    android:text="Kelas"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/bgi">
+
+                <ImageView
+                    android:id="@+id/k3"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/teamwork" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_alignLeft="@+id/k3"
+                    android:layout_alignTop="@+id/k3"
+                    android:layout_alignRight="@+id/k3"
+                    android:layout_alignBottom="@+id/k3"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center"
+                    android:text="Komite"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/lin"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/bgi">
+
+                <ImageView
+                    android:id="@+id/k1"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/graduationhat" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_alignLeft="@+id/k1"
+                    android:layout_alignTop="@+id/k1"
+                    android:layout_alignRight="@+id/k1"
+                    android:layout_alignBottom="@+id/k1"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center"
+                    android:text="Guru"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/bgi">
+
+                <ImageView
+                    android:id="@+id/k2"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/stationery" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_alignLeft="@+id/k2"
+                    android:layout_alignTop="@+id/k2"
+                    android:layout_alignRight="@+id/k2"
+                    android:layout_alignBottom="@+id/k2"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center"
+                    android:text="Pelajaran"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/bgi">
+
+                <ImageView
+                    android:id="@+id/k3"
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/placeholder" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="70dp"
+                    android:layout_height="25dp"
+                    android:layout_alignLeft="@+id/k3"
+                    android:layout_alignTop="@+id/k3"
+                    android:layout_alignRight="@+id/k3"
+                    android:layout_alignBottom="@+id/k3"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center"
+                    android:text="Lokasi"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
